@@ -1,0 +1,9 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.main-button {
+    border: 1px solid $light-green-colour;
+    @include handw(100%, 100%);
+    text-align: center;
+    color: $light-green-colour;
+}

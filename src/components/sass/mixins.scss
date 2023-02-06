@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+@mixin btn () {
+    height: $btn-height;
+    background: $btn-background-color;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+@mixin handw ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin addFlex () {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

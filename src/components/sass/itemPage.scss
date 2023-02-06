@@ -1,0 +1,50 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.details-page {
+    display: flex;
+    height: 100%;
+
+    @media only screen and (max-width: 650px) {
+        flex-direction: column;
+    }
+
+    &-img {
+        flex: 1;
+
+        img {
+            @include handw(100%, 100%);
+        }
+    }
+
+    &-title {
+        flex: 1;
+        padding: 2%;
+
+        & > div > h2 {
+            text-decoration: underline;
+            color: $light-green-colour;
+            margin-bottom: 10px;
+        }
+
+        & > div > p {
+            color: $light-gray;
+
+            p > .details-page-title-description {
+                font-weight: bold;
+            }
+        }
+
+        & > .details-page-ordernow-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 50px;
+
+            button {
+                @include btn;
+            }
+        }
+    }
+}

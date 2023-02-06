@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.home-page-main-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,450px);
+
+    @media only screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
+
+    & > div {
+        padding: 5%; 
+        display: grid;
+        gap: 1%;
+        
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            @include handw(100%, 100%);
+        }
+
+        button {
+            @include btn;
+        }
+    }
+}

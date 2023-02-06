@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+#main-navbar {
+    background-color: $light-green-colour;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+
+    .home-btn {
+        text-decoration: none;
+        font-size: 20px;
+        @include addFlex;
+        width: 15%;
+        border: 1px solid $light-gray;
+        border-radius: 8px;
+        background: $yellow-colour;
+    }
+
+    #filters-option {
+        width: 10%;
+        @include addFlex;
+    }
+
+    h1 {
+        color: $yellow-colour;
+        text-decoration: underline;
+    }
+}
